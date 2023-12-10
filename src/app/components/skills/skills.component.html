@@ -1,0 +1,15 @@
+<div class="skills_container">
+    <!-- <legend class="legend">Skills</legend> -->
+    <div class="row" *ngFor="let skill of skills">
+        <div class="skill">
+            <img src="{{skill.src}}" alt="skill.name" height="80%">
+            <span>{{skill.name}} </span>
+        </div>
+        <div class="progress_container">
+            <div [style.width]="skill.star/5 * 100+'%'" class="progress"></div>
+        </div>
+
+    </div>
+
+
+</div>

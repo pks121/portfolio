@@ -1,0 +1,147 @@
+.home_container {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100vh;
+    scroll-behavior: smooth;
+    background: linear-gradient(to left bottom, #06bbaa, #4436b9);
+    color: var(--light-text);
+    scroll-padding-top: var(--navbar-height);
+    overflow-y: scroll;
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            // background: linear-gradient(to right, red, green);
+            background: #263130;
+        }
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    
+}
+
+.section {
+    min-height: calc(100vh - var(--navbar-height));
+    
+    
+}
+
+
+
+@keyframes scroll_effect {
+    to{
+        transform: translateY(-1000vh);
+    }
+    
+}
+
+.section:nth-child(even) {
+    
+    background: linear-gradient(to right, #0f767c, #1d80ad);
+}
+
+.navbar {
+    // border: 5px solid red;
+    width: 100%;
+    height: var(--navbar-height);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(255, 0, 0), rgba(0, 0, 255));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+
+
+}
+
+.brand_name {
+    font-size: clamp(min(1.8rem, 8vw), 3vw, 3rem);
+    font-weight: bold;
+}
+
+.no_menu_container,
+.menu_container {
+    display: flex;
+    gap: 12px;
+
+    .menu_item {
+        content: '';
+        font-size: 1.1rem;
+        color: var(--light-text);
+        text-decoration: none;
+        border-bottom: none;
+
+        .bottom {
+            width: 0px;
+            opacity: 0;
+        }
+
+        &:hover {
+            color: aquamarine;
+            cursor: pointer;
+
+            .bottom {
+                width: 100%;
+                transition: 300ms;
+                opacity: 1;
+            }
+
+
+        }
+
+
+    }
+
+}
+
+.menu_btn {
+    display: none;
+}
+
+.project_heading {
+    position: relative;
+    // padding-top: var(--navbar-height);
+}
+
+
+
+
+///////////////////////////////////////////
+// MOBILE VIEW
+///////////////////////////////////////////
+
+@media (max-width: 676px) {
+    .menu_btn {
+        display: grid;
+    }
+
+    .no_menu_container {
+        display: none;
+    }
+
+    .menu_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 20px;
+        position: absolute;
+        top: var(--navbar-height);
+        left: 0;
+        // border: 1px solid red;
+        width: 100%;
+        height: calc(100vh - var(--navbar-height));
+        background: linear-gradient(#845656, #622d2d83);
+    }
+
+
+
+}
