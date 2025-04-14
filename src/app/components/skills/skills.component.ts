@@ -9,28 +9,33 @@ export class SkillsComponent {
 
   skills: any[] = [
     {
-      name: 'Angular',
-      star: 4.5,
-      src: 'assets/angular.svg'
-    },
-    {
       name: 'Java',
-      star: 3.5,
+      star: 4.5,
       src: 'assets/java.svg'
     },
     {
-      name: 'Spring',
-      star: 3.5,
+      name: 'Spring boot',
+      star: 4,
       src: 'assets/spring.svg'
     },
     {
+      name: 'Microservices',
+      star: 3,
+      src: 'assets/microservices.svg'
+    },
+    {
+      name: 'Angular',
+      star: 4,
+      src: 'assets/angular.svg'
+    },
+    {
       name: 'Python',
-      star: 3.5,
+      star: 3,
       src: 'assets/python.svg'
     },
     {
       name: 'HTML',
-      star: 3.5,
+      star: 4,
       src: 'assets/html.svg'
     },
     {
@@ -40,23 +45,28 @@ export class SkillsComponent {
     },
     {
       name: 'Typescript',
-      star: 5,
+      star: 4,
       src: 'assets/typescript.svg'
     },
     {
       name: 'SQL',
-      star: 5,
+      star: 4,
       src: 'assets/sql.svg'
     },
     {
       name: 'Postman',
-      star: 3.5,
+      star: 4,
       src: 'assets/postman.svg'
     },
     {
-      name: 'Flutter',
+      name: 'Selenium',
       star: 3.5,
-      src: 'assets/flutter.svg'
+      src: 'assets/selenium.svg'
+    },
+    {
+      name: 'Cucumber',
+      star: 3.5,
+      src: 'assets/cucumber.svg'
     },
 
   ]

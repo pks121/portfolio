@@ -2,3 +2,24 @@
     border-radius: 12px;
 
 }
+
+p{
+    display: flex
+    ;
+        color: burlywood;
+        margin: 9px;
+        padding: 7px;
+        border: 2px solid rgb(210 155 155);
+        background: darkblue;
+        border-radius: 15px;
+        width: 100%;
+}
+
+#contact-info{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -26,7 +26,8 @@
 
         .description {
             color: #b6b1b1;
-            font-size: clamp(.7rem, 2vw, 1.1rem);
+            // font-size: clamp(.7rem, 2vw, 1.1rem);
+            font: clamp(0.7rem, 1.5vw, 1.1rem);
             line-height: inherit;
             text-align: start;
 
@@ -67,7 +68,7 @@
             bottom: -30px;
             right: -15px;
             width: clamp(4rem, 15.5vw, 5.4rem);
-            font-size: clamp(3rem, 3vw, 4.4rem);
+            font-size: clamp(2.5rem, 3vw, 4.4rem);
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             // filter: drop-shadow(0px 0px 5px red);
             font-weight: bold;
@@ -81,6 +82,10 @@
     }
 
 }
+
+// .container[_ngcontent-ng-c112869236] .description_box[_ngcontent-ng-c112869236] .name_tag[_ngcontent-ng-c112869236]{
+//     border-radius: 38%;
+// }
 
 @keyframes rotate {
     to {

@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent {
+  techStack: string[] = [
+    "java",
+    "angular",
+    "spring",
+    "cucumber",
+    "selenium",
+    "mysql"
+
+  ];
 
 }

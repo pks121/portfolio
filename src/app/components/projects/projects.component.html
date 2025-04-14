@@ -1,6 +1,6 @@
 <div class="project_container">
     <div class="project_tile" *ngFor="let project of project_details">
-        <div class="img_container" (click)="goToProjectLink(project.name)">
+        <div class="img_container" (click)="goToProjectLink(project.link_name)">
             <img src="{{project.image}}" class="project_image">
 
         </div>
@@ -8,7 +8,8 @@
             <h1 class="h1">{{project.name}}</h1>
             <div class="tech_container">
                 Tech used:
-                <div *ngFor="let tech of project.tech_used" class="tech_used"> <img src="assets/{{tech}}.svg"
+                <div *ngFor="let tech of project.tech_used" class="tech_used"> 
+                    <img src="assets/{{tech}}.svg"
                         width="24px" alt=""> </div>
             </div>
         </div>
